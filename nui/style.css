@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'VT323', monospace; /* Usar a fonte VT323 */
+}
+
+#nui-container {
+    width: 200px; /* Largura ajustada */
+    background-color: #333;
+    position: absolute; /* Permitir que a NUI seja arrastada */
+    
+}
+
+#nui-display {
+    width: 70%; /* Visor ajustado */
+    padding: 5px;
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+    margin: 0 20px;
+    margin-top: -15px;
+    font-size: 20px; /* Ajustar tamanho da fonte */
+}
+
+.material-icons {
+    font-size: 20px; /* Tamanho dos ícones */
+    cursor: pointer;
+}
+
+#close-button {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: #444;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#volume-control {
+    width: 12%; /* Ajuste da largura da barra de volume */
+    height: 120px; /* Altura da barra de volume aumentada */
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#volume-bar {
+    width: 10px; /* Largura da barra de volume ajustada */
+    top: 10px;
+    height: 100%;
+    background-color: #555;
+    position: relative;
+}
+
+#volume-level {
+    width: 100%;
+    height: 50%; /* Posição inicial do volume */
+    background-color: #800080; /* Cor roxa */
+    position: absolute;
+    bottom: 0;
+    transition: height 0.10s;
+}
+
+
+#nui-controls button {
+    margin: 0 -40px; /* Diminuir espaçamento entre os botões */
+    margin-top: -40px;
+    margin-left: -20px;
+
+    
+}
+
+.volume-handle {
+    position: absolute;
+    left: 50%;
+    bottom: 50px; /* Ajuste este valor para aproximar o ícone da barra */
+    transform: translateX(-50%);
+    font-size: 15px; /* Tamanho do ícone de controle aumentado */
+    color: rgb(130, 137, 141);
+    cursor: pointer;
+    z-index: 10;
+}
+
+
